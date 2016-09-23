@@ -8,12 +8,18 @@ function [b1, c1, C1, b2, c2, C2] = aas(A, B, a)
 %
 %   See also MSL, MAL, AASD.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% oldenhuis@gmail.com
-%
-% Created    : 23/Feb/2009
-% Last edited: 30/Nov/2012
+    % Please report bugs and inquiries to:
+    %
+    % Name       : Rody P.S. Oldenhuis
+    % E-mail     : oldenhuis@gmail.com    (personal)
+    %              oldenhuis@luxspace.lu  (professional)
+    % Affiliation: LuxSpace s�rl
+    % Licence    : BSD
+
+
+    % If you find this work useful, please consider a donation:
+    % https://www.paypal.me/RodyO/3.5
+
 
     % first solution
     b0 = asin( (sin(B).*sin(a))./sin(A) );
@@ -46,10 +52,6 @@ function C = mal(A, B, a, b)
 %
 %   See also MSL, MALD.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% Last edited: 23/Feb/2009
-
     % sine & cosine of C
     % NOTE: denomenator not needed
     sinC  =  sin(A).*cos(B).*cos(b) + sin(B).*cos(A).*cos(a);    
@@ -69,10 +71,6 @@ function c = msl(a, b, A, B)
 %
 %   See also MAL, MSLD.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% Last edited: 23/Feb/2009
-    
     % sine & cosine c
     % NOTE: divisor not needed
     sinc  = (sin(a).*cos(b).*cos(B) + sin(b).*cos(a).*cos(A));	    

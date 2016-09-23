@@ -6,12 +6,18 @@ function [B1, C1, c1, B2, C2, c2] = ssa(a, b, A)
 %
 %   See also SSAD, MAL, MSL.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% oldenhuis@gmail.com
-%
-% Created    : 23/Feb/2009
-% Last edited: 30/Nov/2012
+    % Please report bugs and inquiries to:
+    %
+    % Name       : Rody P.S. Oldenhuis
+    % E-mail     : oldenhuis@gmail.com    (personal)
+    %              oldenhuis@luxspace.lu  (professional)
+    % Affiliation: LuxSpace s�rl
+    % Licence    : BSD
+    
+    
+    % If you find this work useful, please consider a donation:
+    % https://www.paypal.me/RodyO/3.5
+
 
     % first solution
     B0 = asin(sin(b).*sin(A)./sin(a));
@@ -43,10 +49,6 @@ function C = mal(A, B, a, b)
 %
 %   See also MSL, MALD.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% Last edited: 23/Feb/2009
-
     % sine & cosine of C
     % NOTE: denomenator not needed
     sinC  = sin(A).*cos(B).*cos(b) + sin(B).*cos(A).*cos(a);    
@@ -65,10 +67,6 @@ function c = msl(a, b, A, B)
 %   returns the missing angular side c. 
 %
 %   See also MAL, MSLD.
-
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% Last edited: 23/Feb/2009
     
     % sine & cosine c
     % NOTE: divisor not needed

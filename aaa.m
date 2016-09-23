@@ -7,12 +7,17 @@ function [a1, b1, c1, a2, b2, c2] = aaa(A, B, C)
 %
 %   See also AAAD.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% oldenhuis@gmail.com
-%
-% Created    : 23/Feb/2009
-% Last edited: 30/Nov/2012
+    % Please report bugs and inquiries to:
+    %
+    % Name       : Rody P.S. Oldenhuis
+    % E-mail     : oldenhuis@gmail.com    (personal)
+    %              oldenhuis@luxspace.lu  (professional)
+    % Affiliation: LuxSpace s�rl
+    % Licence    : BSD
+
+
+    % If you find this work useful, please consider a donation:
+    % https://www.paypal.me/RodyO/3.5
     
     % first solution   
     a1 = acos2( (cos(A) + cos(B).*cos(C)) ./ (sin(B).*sin(C)),  A );

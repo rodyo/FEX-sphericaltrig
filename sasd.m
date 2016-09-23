@@ -6,12 +6,17 @@ function [c1, A1, B1, c2, A2, B2] = sasd(a, C, b)
 %
 %   See also SAS, ACOS2.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% oldenhuis@gmail.com
-%
-% Crated     : 23/Feb/2009
-% Last edited: 30/Nov/2012
+    % Please report bugs and inquiries to:
+    %
+    % Name       : Rody P.S. Oldenhuis
+    % E-mail     : oldenhuis@gmail.com    (personal)
+    %              oldenhuis@luxspace.lu  (professional)
+    % Affiliation: LuxSpace s�rl
+    % Licence    : BSD
+
+
+    % If you find this work useful, please consider a donation:
+    % https://www.paypal.me/RodyO/3.5
     
     % find both solutions by calling sas directly
     r2d = 180/pi;   

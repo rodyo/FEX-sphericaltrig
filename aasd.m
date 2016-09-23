@@ -8,12 +8,18 @@ function [b1, c1, C1, b2, c2, C2] = aasd(A, B, a)
 %
 %   See also MSL, MAL, AASD.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% oldenhuis@gmail.com
-%
-% Crated     : 23/Feb/2009
-% Last edited: 30/Nov/2012
+    % Please report bugs and inquiries to:
+    %
+    % Name       : Rody P.S. Oldenhuis
+    % E-mail     : oldenhuis@gmail.com    (personal)
+    %              oldenhuis@luxspace.lu  (professional)
+    % Affiliation: LuxSpace s�rl
+    % Licence    : BSD
+
+
+    % If you find this work useful, please consider a donation:
+    % https://www.paypal.me/RodyO/3.5
+
     
     % find both solutions by calling aas directly
     r2d = 180/pi;   

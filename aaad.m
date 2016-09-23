@@ -5,14 +5,20 @@ function [a1, b1, c1, a2, b2, c2] = aaad(A, B, C)
 %   |pi - |A|-|B|| <= |C| <= pi - ||A| - |B||
 %   is not met. 
 %
-%   See also AAAD.
+%   See also AAA.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% oldenhuis@gmail.com
-%
-% Crated     : 23/Feb/2009
-% Last edited: 30/Nov/2012
+    % Please report bugs and inquiries to:
+    %
+    % Name       : Rody P.S. Oldenhuis
+    % E-mail     : oldenhuis@gmail.com    (personal)
+    %              oldenhuis@luxspace.lu  (professional)
+    % Affiliation: LuxSpace s�rl
+    % Licence    : BSD
+
+
+    % If you find this work useful, please consider a donation:
+    % https://www.paypal.me/RodyO/3.5
+
     
     % find both solutions by calling aaa directly
     r2d = 180/pi;   

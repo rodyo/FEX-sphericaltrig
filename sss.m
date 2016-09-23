@@ -7,12 +7,17 @@ function [A1, B1, C1, A2, B2, C2] = sss(a, b, c)
 %
 %   See also SSSD.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% oldenhuis@gmail.com
-%
-% Created    : 23/Feb/2009
-% Last edited: 30/Nov/2012
+    % Please report bugs and inquiries to:
+    %
+    % Name       : Rody P.S. Oldenhuis
+    % E-mail     : oldenhuis@gmail.com    (personal)
+    %              oldenhuis@luxspace.lu  (professional)
+    % Affiliation: LuxSpace s�rl
+    % Licence    : BSD
+    
+    
+    % If you find this work useful, please consider a donation:
+    % https://www.paypal.me/RodyO/3.5
 
     % first solution
     A1 = acos2( (cos(a) - cos(b).*cos(c))./(sin(b).*sin(c)), a);

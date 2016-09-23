@@ -6,12 +6,17 @@ function [C1, a1, b1, C2, a2, b2] = asa(A, B, c)
 %
 %   See also ACOS2, ASAD.
 
-% Rody P.S. Oldenhuis
-% Delft University of Technology
-% oldenhuis@gmail.com
-%
-% Created    : 23/Feb/2009
-% Last edited: 30/Nov/2012
+    % Please report bugs and inquiries to:
+    %
+    % Name       : Rody P.S. Oldenhuis
+    % E-mail     : oldenhuis@gmail.com    (personal)
+    %              oldenhuis@luxspace.lu  (professional)
+    % Affiliation: LuxSpace s�rl
+    % Licence    : BSD
+    
+    
+    % If you find this work useful, please consider a donation:
+    % https://www.paypal.me/RodyO/3.5
     
     % first solution 
     % NOTE: normal acos (in stead of acos2) is indeed correct.
