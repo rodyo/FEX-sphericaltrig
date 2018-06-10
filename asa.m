@@ -8,26 +8,23 @@ function [C1, a1, b1, C2, a2, b2] = asa(A, B, c)
 
     % Please report bugs and inquiries to:
     %
-    % Name       : Rody P.S. Oldenhuis
-    % E-mail     : oldenhuis@gmail.com    (personal)
-    %              oldenhuis@luxspace.lu  (professional)
-    % Affiliation: LuxSpace s�rl
-    % Licence    : BSD
-    
-    
+    % Name   : Rody P.S. Oldenhuis
+    % E-mail : oldenhuis@gmail.com
+    % Licence: 2-clause BSD (See License.txt)
+
     % If you find this work useful, please consider a donation:
     % https://www.paypal.me/RodyO/3.5
-    
-    % first solution 
+
+    % first solution
     % NOTE: normal acos (in stead of acos2) is indeed correct.
     C1 = acos( -cos(A) .*cos(B) + sin(A).*sin(B).*cos(c));
     a1 = acos( (cos(A) + cos(B).*cos(C1)) ./ (sin(B).*sin(C1)));
     b1 = acos( (cos(B) + cos(A).*cos(C1)) ./ (sin(A).*sin(C1)));
-    
+
     C1(imag(C1) ~= 0) = NaN;
     a1(imag(a1) ~= 0) = NaN;
     b1(imag(b1) ~= 0) = NaN;
-    
+
     % second solution
     C2 = 2*pi - C1;
     a2 = mod(a1 + pi, 2*pi);
